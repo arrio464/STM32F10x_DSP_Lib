@@ -1,0 +1,155 @@
+
+<ApplicationBuild Header="FFT_Demo" Extern=".\FFT_Demo.rapp" Path=".\FFT_Demo.rapp" OutputFile=".\STM3210B-EVAL\FFT_Demo.elf" sate="98" Config="STM3210B-EVAL" >
+	<Group Header="User" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\src\main.c" Header="main.c" Marker="-1" OutputFile=".\STM3210B-EVAL\main.o" sate="0" />
+		<NodeC Path="..\src\stm32f10x_it.c" Header="stm32f10x_it.c" Marker="-1" OutputFile=".\STM3210B-EVAL\stm32f10x_it.o" sate="0" />
+		<NodeC Path="..\src\stm3210b_lcd.c" Header="stm3210b_lcd.c" Marker="-1" OutputFile=".\STM3210B-EVAL\stm3210b_lcd.o" sate="0" />
+															
+	</Group>
+	<Group Header="RIDE" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\..\..\Libraries\CMSIS\Core\CM3\startup\gcc\startup_stm32f10x_md.c" Header="startup_stm32f10x_md.c" Marker="-1" OutputFile=".\STM3210B-EVAL\startup_stm32f10x_md.o" sate="0" />
+		<NodeC Path="..\..\..\Libraries\CMSIS\Core\CM3\startup\gcc\startup_stm32f10x_hd.c" Header="startup_stm32f10x_hd.c" Marker="0" OutputFile=".\STM3210B-EVAL\startup_stm32f10x_hd.o" sate="0" >
+			<Options>
+				<Config Header="STM3210B-EVAL" >
+					<Set Header="NodeC" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+									
+						</Section>
+							
+					</Set>
+				</Config>
+			</Options>
+		</NodeC>
+		<NodeC Path="..\..\..\Libraries\CMSIS\Core\CM3\startup\gcc\startup_stm32f10x_ld.c" Header="startup_stm32f10x_ld.c" Marker="0" OutputFile=".\STM3210B-EVAL\startup_stm32f10x_ld.o" sate="0" >
+			<Options>
+				<Config Header="STM3210B-EVAL" >
+					<Set Header="NodeC" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+									
+						</Section>
+							
+					</Set>
+				</Config>
+			</Options>
+		</NodeC>
+															
+	</Group>
+	<Group Header="StdPeriph_Driver" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Header="stm32f10x_rcc.c" Marker="-1" OutputFile=".\STM3210B-EVAL\stm32f10x_rcc.o" sate="0" />
+		<NodeC Path="..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c" Header="stm32f10x_spi.c" Marker="-1" OutputFile=".\STM3210B-EVAL\stm32f10x_spi.o" sate="0" />
+		<NodeC Path="..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Header="misc.c" Marker="-1" OutputFile=".\STM3210B-EVAL\misc.o" sate="0" />
+		<NodeC Path="..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Header="stm32f10x_flash.c" Marker="-1" OutputFile=".\STM3210B-EVAL\stm32f10x_flash.o" sate="0" />
+		<NodeC Path="..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Header="stm32f10x_gpio.c" Marker="-1" OutputFile=".\STM3210B-EVAL\stm32f10x_gpio.o" sate="0" />
+																	
+	</Group>
+	<Group Header="CMSIS" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\..\..\Libraries\CMSIS\Core\CM3\system_stm32f10x.c" Header="system_stm32f10x.c" Marker="-1" OutputFile=".\STM3210B-EVAL\system_stm32f10x.o" sate="0" />
+		<NodeC Path="..\..\..\Libraries\CMSIS\Core\CM3\core_cm3.c" Header="core_cm3.c" Marker="-1" OutputFile=".\STM3210B-EVAL\core_cm3.o" sate="0" />
+															
+	</Group>
+	<Group Header="Doc" Marker="-1" OutputFile="" sate="0" >
+		<NodeText Path="..\readme.txt" Header="readme.txt" Marker="-1" OutputFile="" sate="0" />
+															
+	</Group>
+	<Configs>
+		<Config Header="STM3210B-EVAL" />
+															
+	</Configs>
+	<Group Header="DSP_Lib" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\PID_C_stm32.c" Header="PID_C_stm32.c" Marker="-1" OutputFile=".\STM3210B-EVAL\PID_C_stm32.o" sate="0" />
+		<NodeC Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\iir_stm32.c" Header="iir_stm32.c" Marker="-1" OutputFile=".\STM3210B-EVAL\iir_stm32.o" sate="0" />
+		<NodeASM Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\asm\gcc\cr4_fft_64_stm32.s" Header="cr4_fft_64_stm32.s" Marker="-1" OutputFile=".\STM3210B-EVAL\cr4_fft_64_stm32.o" sate="0" />
+		<NodeASM Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\asm\gcc\cr4_fft_256_stm32.s" Header="cr4_fft_256_stm32.s" Marker="-1" OutputFile=".\STM3210B-EVAL\cr4_fft_256_stm32.o" sate="0" />
+		<NodeASM Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\asm\gcc\cr4_fft_1024_stm32.s" Header="cr4_fft_1024_stm32.s" Marker="-1" OutputFile=".\STM3210B-EVAL\cr4_fft_1024_stm32.o" sate="0" />
+		<NodeASM Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\asm\gcc\fir_stm32.s" Header="fir_stm32.s" Marker="-1" OutputFile=".\STM3210B-EVAL\fir_stm32.o" sate="0" />
+		<NodeASM Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\asm\gcc\iirarma_stm32.s" Header="iirarma_stm32.s" Marker="-1" OutputFile=".\STM3210B-EVAL\iirarma_stm32.o" sate="0" />
+		<NodeASM Path="..\..\..\Libraries\STM32F10x_DSP_Lib\src\asm\gcc\PID_stm32.s" Header="PID_stm32.s" Marker="-1" OutputFile=".\STM3210B-EVAL\PID_stm32.o" sate="0" />
+			
+	</Group>
+	<Options>
+		<Config Header="Standard" >
+			<Set Header="ApplicationBuild" >
+				<Section Header="General" >
+					<Property Header="TargetFamily" Value="ARM" />
+																																																				
+				</Section>
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\..\..\..\Libraries\CMSIS\Core\CM3;..\inc" Removable="1" />
+					<Property Header="OutDir" Value="$(ApplicationDir)\STM3210B-EVAL" Removable="1" />
+					<Property Header="ListDir" Value="$(ApplicationDir)\STM3210B-EVAL" Removable="1" />
+																																																				
+				</Section>
+																																								
+			</Set>
+			<Set Header="Target" >
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F103VBT6" />
+																																																				
+				</Section>
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\\GNU.config" Removable="1" />
+																																																				
+				</Section>
+																																								
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="STM32F10X_MD;USE_STDPERIPH_DRIVER;USE_STM3210B_EVAL" Removable="1" />
+																																																				
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																				
+				</Section>
+																																								
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																				
+				</Section>
+				<Section Header="Scripts" >
+					<Property Header="SCRIPTFILES" Value="Yes" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+					<Property Header="StarterKitLimit" Value="No" Removable="1" />
+																																																				
+				</Section>
+				<Section Header="LIB" >
+					<Property Header="STLIB" Value="0" Removable="1" />
+					<Property Header="UART0PUTC" Value="0" Removable="1" />
+																																																				
+				</Section>
+																																								
+			</Set>
+																									
+		</Config>
+		<Config Header="STM3210B-EVAL" >
+			<Set Header="LD" >
+				<Section Header="Linker" >
+					<Property Header="MAPFILE" Value="-Wl,-Map -Xlinker !$(Build.ListingFile)!" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+							
+				</Section>
+					
+			</Set>
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="..\..\..\Libraries\CMSIS\Core\CM3;..\..\..\Libraries\STM32F10x_DSP_Lib\inc;..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\inc" Removable="1" />
+							
+				</Section>
+					
+			</Set>
+		</Config>
+	</Options>
+</ApplicationBuild>

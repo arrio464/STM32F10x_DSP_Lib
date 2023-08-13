@@ -1,0 +1,4 @@
+
+<Project Header="Project 'FFT_Demo'" Path=".\FFT_Demo.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="FFT_Demo" >
+	<ApplicationBuild Header="FFT_Demo" Extern=".\FFT_Demo.rapp" Path=".\FFT_Demo.rapp" OutputFile=".\STM3210B-EVAL\FFT_Demo.elf" sate="98" Config="STM3210B-EVAL" />
+</Project>
